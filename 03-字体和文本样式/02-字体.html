@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>字体</title>
+    <style>
+        /* 如果用户的电脑没有宋体，就显示黑体，如果也没有黑体，就显示任意一种无衬线字体 */
+        /* sans-serif即无衬线字体 */
+        .family{
+            font-family: 宋体,黑体,sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <p>这是一个普通p标签</p>
+    <p class="family">这是一个p标签，要用font-family变成宋体</p>
+</body>
+</html>

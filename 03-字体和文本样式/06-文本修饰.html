@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文本修饰</title>
+    <style>
+        p.a{
+            text-decoration: underline;
+        }
+        div.a{
+            text-decoration: line-through;
+        }
+        div.b{
+            text-decoration: overline;
+        }
+        a.a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <p>这是一个普通p标签</p>
+    <p class="a">这是一个p标签，要用text-decoration加下划线</p>
+    <div>这是一个普通div标签</div>
+    <div class="a">这是一个div标签，要用text-decoration加删除线</div>
+    <br>
+    <div class="b">这又是一个div标签，要用text-decoration加上划线</div>
+    <a href="">这是一个普通a标签</a><br>
+    <a href="" class="a">这是一个a标签，要用text-decoration去掉默认下划线</a>
+</body>
+</html>
