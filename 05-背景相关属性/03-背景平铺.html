@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>背景平铺</title>
+    <style>
+        div{
+            width: 600px;
+            height: 320px;
+            background-color: pink;
+            color: #fff;
+            background-image: url(../markdown笔记/images/05-03.png);
+
+        }
+        .a{
+            background-repeat: repeat;
+        }
+        .b{
+            background-repeat: no-repeat;
+        }
+        .c{
+            background-repeat: repeat-x;
+        }
+        .d{
+            background-repeat: repeat-y;
+        }
+    </style>
+</head>
+<body>
+    <div class="a">这是一个div标签，给它加上背景图并且使用背景平铺，属性值repeat</div><br>
+    <div class="b">这是一个div标签，给它加上背景图并且使用背景平铺，属性值no-repeat</div><br>
+    <div class="c">这是一个div标签，给它加上背景图并且使用背景平铺，属性值repeat-x</div><br>
+    <div class="d">这是一个div标签，给它加上背景图并且使用背景平铺，属性值repeat-y</div><br>
+</body>
+</html>

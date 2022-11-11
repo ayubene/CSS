@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>后代选择器</title>
+    <style>
+        div span{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <p>这是一个普通p标签</p>
+    <div>
+        <span>
+            这是一个span标签，父母是div，子女是p标签，<br> 现在要用后代选择器将这个span和它的儿女p标签变红
+            <p>这是一个p标签，父母是一个span标签，祖父祖母是一个div标签</p>
+        </span>
+    </div>
+</body>
+</html>

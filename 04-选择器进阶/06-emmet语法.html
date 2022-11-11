@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>emmet语法</title>
+    <style>
+        div{
+            /* 背景颜色 bgc */
+            background-color: #fff;
+            /* 高度200宽度300背景颜色粉色 w300+h200+bgc */
+            width: 300px;
+            height: 200px;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <!-- .class -->
+    <div class="class"></div>
+    <!-- p.class -->
+    <p class="class"></p>
+    <!-- p#id -->
+    <p id="id"></p>
+    <!-- 同级2个标签 div+p -->
+    <div></div>
+    <p></p>
+    <!-- 父母子女标签 div>p -->
+    <div>
+        <p></p>
+    </div>
+    <!-- ul里面3个li标签 ul>li*3 -->
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <!-- ul里面3个li标签,内容为111 ul>li{111}*3 -->
+    <ul>
+        <li>111</li>
+        <li>111</li>
+        <li>111</li>
+    </ul>
+    <!--ul里3个li标签内容分别为1,2,3 ul>li{$}*3  -->
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+</body>
+</html>

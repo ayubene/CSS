@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>子代选择器</title>
+    <style>
+        div>p{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        这是一个div标签，儿女是p标签，孙辈是a标签
+        <p>
+            这是一个p标签，父母是div标签，儿女是a标签，<br> 子代选择器只能让这个p标签变红而不会人它的儿女a变红
+            <a href="#">这是一个a标签</a>
+        </p>
+    </div>
+</body>
+</html>
