@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>优先级基本测试</title>
+    <style>
+        /* 继承 */
+        body{
+            color: red;
+        }
+        /* 通配符选择器 */
+        *{
+            color: orange;
+        }
+        /* 标签选择器 */
+        div{
+            color: yellow;
+        }
+        /* 类选择器 */
+        .class{
+            color: green;
+        }
+        /* id选择器 */
+        #id{
+            color: skyblue;
+        }
+        /* 给通配符选择器加上!important */
+        *{
+            color: orange !important;
+        }
+    </style>
+</head>
+<body>
+    <!-- 行内样式 "color: blue" -->
+    <div class="class" id="id" style="color: blue">这是一个div标签</div>
+</body>
+</html>

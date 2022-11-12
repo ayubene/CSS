@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>优先级-权重叠加计算</title>
+    <style>
+        /* 权值（行内，id，类，标签） */
+        /* 0,1,1,0 */
+        .parent #two{
+            color: red;
+        }
+        /* 0,0,1,1 */
+        div .child{
+            color: orange;
+        }
+        /* 0,2,0,0 */
+        #one #two{
+            color: green;
+        }
+        /* 0,0,0,2 */
+        div p{
+            color: purple
+        }
+    </style>
+</head>
+<body>
+    <div class="parent" id="one">
+        <p class="child" id="two" >这是一个p标签</p>
+    </div>
+</body>
+</html>
