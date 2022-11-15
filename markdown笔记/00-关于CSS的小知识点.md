@@ -61,3 +61,13 @@ A **span** element which is used to color a part of a text:
 ### 关于img和背景图片
 * 如果是较为重要的图片，需要用img，如产品图，宣传图等
 * 而不太重要的图片，就用背景图片，使用CSS的background功能，如网页上一些不太起眼的小图标等
+
+### CSS书写顺序
+* 书写顺序：
+  + 定位
+  + 浮动/display
+  + 盒子模型：margin, border, padding, width, height, backgroundcolor...
+  + 文字样式
+
+### 关于float和inline-block
+* 有一篇文章：[Should You Use Inline-Blocks As A Substitute For Floats?](https://vanseodesign.com/css/inline-blocks/)

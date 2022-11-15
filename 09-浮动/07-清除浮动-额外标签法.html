@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>清除浮动-额外标签法</title>
+    <style>
+        div{
+            margin: 0 auto;
+        }
+        .box1{
+            width: 1000px;
+            /* 如果这里不加高度，就会对标准流元素产生影响 */
+            /* height: 400px; */
+            background-color: pink;
+        }
+        .box1 .left{
+            float: left;
+            width: 200px;
+            height: 400px;
+            background-color: skyblue;
+        }
+        .box1 .right{
+            float: right;
+            width: 780px;
+            height: 400px;
+            background-color: red;
+        }
+        .box2{
+            width: 1200px;
+            height: 100px;
+            background-color: green;
+        }
+        .clearfix{
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="left"></div>
+        <div class="right"></div>
+        <div class="clearfix"></div>
+    </div>
+    <div class="box2"></div>
+</body>
+</html>
