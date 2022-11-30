@@ -1,0 +1,406 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* 内减模式 */
+    box-sizing: border-box;
+}
+
+/* 清除列表标签默认样式 */
+li{
+    list-style: none;
+}
+
+/* 清除链接默认样式 */
+a{
+    text-decoration: none;
+}
+
+/* 解决塌陷问题和浮动带来的影响 */
+.clearfix::before,
+.clearfix::after{
+    content: '';
+    display: table;
+}
+.clearfix::after{
+    clear: both;
+}
+
+/* 版心居中 */
+.wrapper{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* body用于加背景色等 */
+body{
+    background-color: #f3f5f7;
+}
+
+/* 头部 */
+.header{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height: 42px;
+}
+
+h1{
+    float: left;
+}
+
+.nav{
+    float: left;
+    height: 42px;
+    margin-left: 70px;
+}
+.nav ul li{
+    float: left;
+
+    margin-right: 26px;
+    padding: 0 9px;
+
+    line-height: 42px;
+}
+.nav ul li a{
+    color: #050505;
+}
+.nav ul li:hover{
+    border-bottom: 2px solid #00a4ff;
+}
+
+.search{
+    float: left;
+
+    width: 412px;
+    height: 40px;
+    margin-left: 59px;
+    border: 1px solid #00a4ff;
+}
+.search input{
+    float: left;
+    border: 0;
+    width: 360px;
+    height: 38px;
+}
+.search input::placeholder{
+    padding-left: 20px;
+
+    font-size: 12px;
+    color: #bfbfbf;
+}
+.search button{
+    float: left;
+    border: 0;
+
+    width: 50px;
+    height: 40px;
+    background-image: url(../images/btn.png);
+}
+
+.user{
+    float: right;
+    /* height: 42px; */
+
+    margin-right: 35px;
+    line-height: 42px;
+    
+}
+.user img{
+    vertical-align: middle;
+}
+
+/* 轮播图 */
+.banner{
+    height: 420px;
+    background-color: #1C036C;
+}
+
+.banner .wrapper{
+    height: 420px;
+    background-image: url(../images/banner2.png);
+}
+.banner .left{
+    float: left;
+
+    width: 190px;
+    height: 420px;
+    background-color: rgba(0,0,0,0.3);
+}
+.banner .left ul{
+    padding: 10px 20px 0;
+
+    line-height: 44px;
+}
+.banner .left a{
+    font-size: 14px;
+    color: #fff;
+}
+.banner .left span{
+    float: right;
+}
+.banner .left a:hover{
+    color: #00b4ff;
+}
+.banner .right{
+    float: right;
+
+    margin-top: 50px;
+    width: 229px;
+    height: 300px;
+    background-color: #fff;
+}
+.banner .right h2{
+    height: 48px;
+    background-color: #9bceea;
+    text-align: center;
+    line-height: 48px;
+    color: #fff;
+}
+.banner .right dl{
+    padding: 13px 18px;
+    border-bottom: 2px solid #e5e5e5;
+}
+.banner .right a{
+    display: inline-block;
+    font-size: 16px;
+    color: #4e4e4e;
+}
+.banner .right dt{
+    display: inline-block;
+    padding-left: 5px;
+    font-size: 14px;
+    color: #4e4e4e;
+}
+.banner .right dl{
+    font-size: 12px;
+    color: #a5a5a5;
+}
+.banner .more{
+    width: 200px;
+    height: 40px;
+    border: 1px solid #00a4ff;
+    margin: 4px 14px;
+
+    text-align: center;
+    line-height: 40px;
+    color: #00a4ff;
+}
+
+/* 精品推荐导航栏 */
+.goods-nav{
+    height: 60px;
+    margin-top: 8px;
+    padding: 0 35px;
+
+    background-color: #fff;
+    box-shadow: 0px 2px 3px 0px 
+		rgba(118, 118, 118, 0.2);
+    line-height: 60px;
+}
+.goods-nav h2{
+    float: left;
+    margin-right: 35px;
+
+    font-size: 16px;
+    color: #00a4ff;
+}
+.goods-nav ul li{
+    float: left;
+}
+.goods-nav li a{
+    padding: 0 35px;
+    border-left: 1px solid #bfbfbf;
+
+    font-size: 16px;
+    color: #050505;
+}
+.goods-nav .change-habbit{
+    float: right;
+
+    font-size: 14px;
+    color: #00a4ff;
+}
+
+.box-goods-recommended,
+.box-machine-learning,
+.box-front-end,
+.box-coding-learning,
+.box-data-analysing{
+    margin-top: 40px;
+}
+.box-goods-recommended .title,
+.box-machine-learning .title,
+.box-front-end .title,
+.box-coding-learning .title,
+.box-data-analysing .title{
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+}
+.box-goods-recommended .title h2,
+.box-machine-learning .title h2,
+.box-front-end .title h2,
+.box-coding-learning .title h2,
+.box-data-analysing .title h2{
+    float: left;
+    font-size: 20px;
+    font-weight: normal;
+    color: #494949;
+}
+.box-goods-recommended .look-all,
+.box-machine-learning .look-all,
+.box-front-end .look-all,
+.box-coding-learning .look-all,
+.box-data-analysing .look-all{
+    float: right;
+
+    font-size: 12px;
+    color: #a5a5a5;
+}
+.box-goods-recommended .content,
+.box-machine-learning .content,
+.box-front-end .content,
+.box-coding-learning .content,
+.box-data-analysing .content{
+    margin-top: 20px;
+}
+.box-goods-recommended .course li,
+.box-machine-learning .course li,
+.box-front-end .course li,
+.box-coding-learning .course li,
+.box-data-analysing .course li{
+    float: left;
+    width: 228px;
+	height: 270px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+	background-color: #ffffff;
+	box-shadow: 0px 2px 5px 0px 
+		rgba(118, 118, 118, 0.5);
+}
+.box-goods-recommended .course li:nth-child(5n),
+.box-machine-learning .course li:nth-child(5n),
+.box-front-end .course li:nth-child(5n){
+    margin-right: 0;
+}
+.box-coding-learning .course li:last-child,
+.box-data-analysing .course li:last-child{
+    margin-right: 0;
+}
+.box-goods-recommended .course li h3,
+.box-machine-learning .course li h3,
+.box-front-end .course li h3,
+.box-coding-learning .course li h3,
+.box-data-analysing .course li h3{
+    margin: 20px;
+    font-size: 14px;
+    color: #050505;
+}
+.box-goods-recommended .course li p,
+.box-machine-learning .course li p,
+.box-front-end .course li p,
+.box-coding-learning .course li p,
+.box-data-analysing .course li p{
+    margin: 20px;
+    font-size: 12px;
+    color: #999999;
+}
+.box-goods-recommended .course li span,
+.box-machine-learning .course li span,
+.box-front-end .course li span,
+.box-coding-learning .course li span,
+.box-data-analysing .course li span{
+    color: #ff7c2d;
+}
+.box-machine-learning .title .course-nav,
+.box-front-end .title .course-nav,
+.box-coding-learning .course-nav,
+.box-data-analysing .course-nav{
+    display: inline-block;
+    height: 20px;
+}
+.box-machine-learning .title .course-nav li,
+.box-front-end .title .course-nav li,
+.box-coding-learning .course-nav li,
+.box-data-analysing .course-nav li{
+    float: left;
+    margin-right: 72px;
+}
+.box-machine-learning .title .course-nav li a,
+.box-front-end .title .course-nav li a,
+.box-coding-learning .course-nav li a,
+.box-data-analysing .course-nav li a{
+    font-size: 16px;
+    color: #868686;
+}
+.box-machine-learning .title .course-nav li a:hover,
+.box-front-end .title .course-nav li a:hover,
+.box-coding-learning .course-nav li a:hover,
+.box-data-analysing .course-nav li a:hover{
+    color: #00a4ff;
+}
+.box-machine-learning .title .course-nav li:last-child,
+.box-front-end .title .course-nav li:last-child,
+.box-coding-learning .course-nav li:last-child,
+.box-data-analysing .course-nav li:last-child{
+    margin-right: 0;
+}
+.box-coding-learning .content .left,
+.box-data-analysing .content .left{
+    float: left;
+    margin-right: 15px;
+}
+.box-coding-learning .content .top,
+.box-data-analysing .content .top{
+    float: left;
+    margin-bottom: 17px;
+}
+.box-front-end{
+    margin-bottom: 40px;
+}
+
+/* footer */
+.footer{
+    padding-top: 30px;
+    height: 417px;
+    background-color: #fff;
+}
+.footer .left{
+    float: left;
+}
+.footer .left img{
+    margin-bottom: 18px;
+}
+.footer .left p{
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 12px;
+}
+.footer .left a{
+    display: inline-block;
+    width: 120px;
+	height: 36px;
+	border: solid 1px #00a4ff;
+
+    font-size: 16px;
+    color: #00a4ff;
+    text-align: center;
+    line-height: 36px;
+}
+.footer .right{
+    float: right;
+}
+.footer .right dl{
+    float: left;
+    margin-left: 140px;
+
+    line-height: 21px;
+}
+.footer .right dt{
+    font-size: 15px;
+}
+.footer .right dd{
+    font-size: 12px;
+}
+.footer .right a{
+    color: #333;
+}
