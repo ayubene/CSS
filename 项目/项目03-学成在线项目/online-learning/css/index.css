@@ -268,6 +268,7 @@ h1{
 .box-front-end .course li,
 .box-coding-learning .course li,
 .box-data-analysing .course li{
+    /* position: relative; */
     float: left;
     width: 228px;
 	height: 270px;
@@ -403,4 +404,15 @@ h1{
 }
 .footer .right a{
     color: #333;
+}
+
+.box-goods-recommended .content .course li{
+    position: relative;
+}
+.box-goods-recommended .content .course li .hot{
+    position: absolute;
+    /* left: 200px;
+    bottom: 255px; */
+    right: -8px;
+    top: 4px;
 }

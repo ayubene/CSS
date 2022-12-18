@@ -71,3 +71,7 @@ A **span** element which is used to color a part of a text:
 
 ### 关于float和inline-block
 * 有一篇文章：[Should You Use Inline-Blocks As A Substitute For Floats?](https://vanseodesign.com/css/inline-blocks/)
+
+### 元素整体透明度
+* 属性名：opacity
+* 属性值：0-1，1表示完全不透明，0表示完全透明

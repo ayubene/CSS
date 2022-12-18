@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>垂直居中</title>
+    <style>
+        .box{
+            width: 400px;
+            height: 400px;
+            background-color: pink;
+            line-height: 400px;
+            text-align: center;
+        }
+        img{
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        
+        <img src="../markdown笔记/images/10-03.jpg" alt="">
+    </div>
+    <p>这是一段文字，父母标签加上line-height后就可以垂直居中。但上面的图片除了line-height以外，还需要给img标签加上vertical-align才能使得图片垂直居中。同样，使用text-align可以使得文字和图片水平居中。原因在于浏览器解析行内块一律当作文字处理</p>
+</body>
+</html>

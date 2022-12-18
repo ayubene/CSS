@@ -1,0 +1,87 @@
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>子女绝父母相-微金所导航加上二维码</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            line-height: 1;
+        }
+        ul{
+            list-style: none;
+            /* float: center; */
+
+            height: 42px;
+            border-top: 1px solid #dadce0;
+            border-bottom: 1px solid #ccc;
+            box-sizing: border-box;
+
+            
+        }
+        .center{
+            margin: 0 auto;
+            text-align: center;
+
+            width: 1200px;
+            height: 40px;
+        }
+        li {
+            display: block;
+            float: left;
+
+            width: 240px;
+            height: 40px;
+            border-right: 1px solid #ccc;
+            /* margin: 0 a; */
+            text-align: center;
+            box-sizing: border-box;
+
+            
+        }
+        li a{
+            text-decoration: none;
+            line-height: 40px;
+            color: #000;
+        }
+        li:last-child{
+            border-right: none;
+        }
+        .app{
+            position: relative;
+        }
+        .code{
+            position: absolute;
+            
+            display: none;
+
+            left: 50%;
+            top:40px;
+            transform: translate(-50%);
+        }
+
+        .center .app:hover .code{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <div class="center">
+            <li><a href="#">我要投资</a></li>
+            <li><a href="#">平台介绍</a></li>
+            <li><a href="#">新手专区</a></li>
+            <li><a href="#" class="app">手机微金所 <img src="../markdown笔记/images/10-01.jpg" alt="" class="code"></a></li>
+            <li><a href="#">个人中心</a></li>
+        </div>
+        
+    </ul>
+</body>
+</html>
